@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Index -->
+<template id="partner_page" name="Partners">
+    <t t-call="website.layout">
+        <t t-set="additional_title">Partners</t>
+        <center><h1><u>Partner Form</u></h1></center>
+        <marquee width="100%" direction="right" height="40px">
+          <u>Please Enter All The Details Carefully</u>
+</marquee>
+
+        <div id="wrap">
+            <div class="container" style="border-style:double; margin-bottom:10px;">
+                <form action="/create_patient" method="post" enctype="multipart/form-data">
+
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+                      <div class="form-group" id="nameid">
+                        <label for="getname">Name</label>
+                        <input type="text" class="form-control" name="name" placeholder="Enter Name" id="getname"/>
+                      </div>
+                      <div class="form-group" id="mailid" >
+                        <label for="getemail">Email address</label>
+                        <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Enter email" id="getemail"/>
+                      </div>
+
+                    <div class="form-group" id="phoneid">
+                        <label for="getphno">Phone Number</label>
+                       <input type="phone" class="form-control" placeholder="Enter Phone Number" name="phone" id="getphno"/>
+                      </div>
+                      <div class="form-group" id="imgid">
+                      <label class="form-label" for="getimg">Insert Partner Image</label>
+                        <input type="file" class="form-control" id="getimg" name="image_1920"/>
+                        </div>
+
+                      
+
+                      <button type="submit" class="btn btn-primary" style="margin-bottom:10px">Submit</button>
+                      <br></br>
+                </form>
+            </div>
+        </div>
+            
+           
+    </t>
+</template>
+
+
+</odoo>

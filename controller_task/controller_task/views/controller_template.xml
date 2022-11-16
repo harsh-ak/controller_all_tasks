@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Index -->
+<template id="product_page" name="Products">
+    <t t-call="website.layout">
+        <t t-set="additional_title">Products</t>
+        <center><h1><u>All Product Details</u></h1></center>
+        <br></br>
+        <br></br>
+                        <hr></hr>
+        <div id="wrap">
+            <div class="container">
+
+                <div class="row border border-dark bg-danger" id="heading">
+                            <div class="col-1 border border-dark">SR No.</div>
+                            <div class="col-5 border border-dark">Product</div>
+                            <div class="col-2 border border-dark">Name</div>
+                            <div class="col-2 border border-dark">Catagory</div>
+                            <div class="col-2 border border-dark">Price</div>
+                        </div>
+                        <t t-set="i" t-value="1"/>
+                    <div class="row border" t-foreach="products" t-as="product" t-attf-style = "product.name == 'Customizable Desk' ? 'background-color:#ff0080;':'background-color:red;'" >
+
+                        <div class="col-1 border border-dark bg-info">
+                            <t t-esc="i"/>
+                             <t t-set="i" t-value="i+1"/>
+
+                        </div>
+                        <div class="col-5 border-success">
+                           
+                                <img t-attf-src="/web/image/product.product/#{product.id}/image_1920" class="img img-responsive"/>
+                         
+                        </div> 
+                        
+                        <div class="col-2 border">
+                            <t t-out="product.name"/>
+                        </div>
+                        <div class="col-2 border">
+                            <t t-out="product.detailed_type"/>
+                        </div> 
+                        <div class="col-2 border">
+                            <t t-out="product.list_price"/>
+                        </div>
+                        <!-- <div class="col-2 border">
+                        <a t-attf-href="/store/#{product.id}" class="btn btn-primary">
+                         Goto Product <i class="fa fa-eye"/>
+                        </a>
+                        </div> -->
+                    </div>
+            </div>
+        </div>
+            <!-- <div class="container">
+                <div class="row">
+
+            <div class="col-lg-3 mb32" id="left_column">
+                <ul class="nav nav-pills flex-column mt16">
+                    <li class="nav-header nav-item"><h3>Associations</h3></li>
+                    <li class="nav-item"><a href="/members" class="nav-link#{'' if membership_id else ' active'}">All</a></li>
+                    <t t-foreach="memberships_data" t-as="membership_data">
+                        <li class="nav-item">
+                            <a t-attf-href="/members/association/#{ membership_data['id'] }#{current_country and '/country/%s' % slug(current_country) or ''}#{ search }"
+                                t-attf-class="nav-link#{membership_id and membership_data['id'] == membership_id and ' active' or ''}"><t t-esc="membership_data['name']"/></a>
+                        </li>
+                    </t>
+                </ul>
+            </div> -->
+           <!--  <div class="col-lg-8" id="ref_content">
+                <div class='d-flex m-2'>
+                    <t t-call="website.pager">
+                       <t t-set="classname" t-valuef="float-left"/>
+                    </t>
+                    <form action="" method="get" class="navbar-search ml-auto pagination form-inline">
+                        <t t-call="website.website_search_box">
+                            <t t-set="search" t-value="post.get('search', '')"/>
+                        </t>
+                    </form>
+                </div>
+                <div>
+                    <t t-if="not memberships_partner_ids">
+                        <p>No result found.</p>
+                    </t>
+                    <t t-foreach="memberships_data" t-as="membership_data">
+                        <t t-if="memberships_partner_ids.get(membership_data['id'])">
+                            <h3 class="text-center"><span t-esc="membership_data['name']"/></h3>
+                            <t t-foreach="memberships_partner_ids[membership_data['id']]" t-as="partner_id">
+                                <t t-set="partner" t-value="partners[partner_id]"/>
+                                <div class="media mt-3">
+                                    <a t-attf-href="/members/#{slug(partner)}"
+                                       t-field="partner.avatar_128"
+                                       t-options='{"widget": "image", "qweb_img_responsive": False, "class": "o_image_64_cover mr-3"}'
+                                    ></a>
+                                    <div class="media-body" style="min-height: 64px;">
+                                        <a t-attf-href="/members/#{slug(partner)}">
+                                            <span t-field="partner.display_name"/>
+                                        </a>
+                                        <div t-field="partner.website_short_description"/>
+                                    </div>
+                                </div>
+                            </t>
+                        </t>
+                    </t>
+                </div>
+            </div>
+
+                </div>
+            </div> -->
+           
+    </t>
+</template>
+
+
+</odoo>

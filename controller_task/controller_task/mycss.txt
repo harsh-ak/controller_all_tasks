@@ -1,0 +1,50 @@
+	
+CSS FOR THE PARTNER FORM
+	h1 {
+		color: darkseagreen;
+		text-shadow: 2px 2px;
+	}
+/*h1:hover {
+	background-color: #00ff00 !important;
+	color: #fff !important;
+}*/
+/*.container{
+	background-color: lightblue;
+}*/
+/*input{
+	background-color: red;
+}*/
+/*#myid {
+	background-color: red;
+}*/
+.form-group{
+	color: sienna;
+}
+
+/*#wrap{
+	background-color: lightblue;
+}*/
+#getname:hover,#getemail:hover,#getphno:hover,#getimg:hover{
+	background-color: tan;
+	border-style:solid ;	
+	
+}
+body{
+	background-image:url('/controller_task/static/img/img3.webp');
+	width: 100%;
+}
+
+#box{
+	border-style:double;
+}
+#nameid:hover,#mailid:hover,#phoneid:hover,#imgid:hover{
+	text-align: center;
+	font-size:x-large;
+	color: black;
+	
+}
+marquee{
+	color: black;
+	font-size: larger;
+	font-weight: bold;
+}

@@ -1,0 +1,15 @@
+<odoo>
+
+  <record id="inherit_sale" model="ir.ui.view">
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="model">sale.order.line</field>
+            <field name="name">sale_order_line</field>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='order_lines']/form" position="inside">
+                    <field name="so_field_1"/>
+                    <field name="so_field_2"/>
+                </xpath>
+            </field>
+        </record>
+
+</odoo>

@@ -1,0 +1,158 @@
+./*container{
+
+	display: inline;
+
+}*/
+.header{
+	margin: 20px 30px 20px 30px;
+	border-radius: 25px;
+	
+	
+}
+nav.header{
+  margin-top: 2%;
+  
+ 
+}
+ul{
+	font-family: initial;
+font-size: small;
+}
+/*.header > ul{
+	background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}*/
+
+
+.myp{
+margin-top: 26px;
+margin-bottom: 10px;
+display: inline;
+
+}
+.mybutton{
+	  font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 18px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: #3366ff;
+  color: #ffffff;
+  
+}
+.log{
+margin-top: 26px;
+margin-bottom: 10px;
+display: inline;
+margin-left: 16% !important;
+font-weight: bold;
+
+}
+#myimg{
+	float: right;
+	width: 109%;
+}
+#first{
+	margin-left: 140px !important; 
+
+}
+#big_content{
+	margin-top: 10%;
+}
+.myboldtext
+{
+	font-size: xxx-large;
+font-weight: bolder;
+line-height: 33px;
+margin-left: 18%;
+}
+#img_content{
+margin-top: 10px;
+}
+.small_text1{
+	
+	margin-left: 18%;
+	margin-top: 4%;
+	font-weight: initial;
+}
+.small_text2{
+	
+	margin-left: 18%;
+	margin-top: -2%;
+	font-weight: initial;
+}
+.start_btn{
+	font-size: 17px;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 18px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  background-color: #3366ff;
+  color: #ffffff;
+  margin-left: 18%;
+
+}
+#icon_id{
+	background-color: lightgreen;
+}
+.icon_content{
+	margin-left: 18%;
+	margin-top: 8%;
+	font-size: 15px;
+}
+#myrow{
+	background-color: #4169E1;
+	margin: 0px 80px 0px 167px;
+	border: 15px solid transparent;
+	  border-radius: 16px;
+}
+.forinline{
+	display: inline-block;
+	color: white;
+	margin-bottom: 4%;
+margin-top: 24px;
+
+}
+.cont_btn{
+	background-color: white;
+	padding: 15px 31px;
+    border-radius: 11px;
+    color: black;
+font-weight: initial;
+font-size: 14px;
+
+}
+  div.vertical-line{
+      width: 1px; /* Line width */
+      background-color: white; /* Line color */
+      height: 100%; /* Override in-line if you want specific height. */
+      float: right;
+      }
+#icon_id2{
+	color: white;
+}      
+b {
+    border-bottom: 3px solid #3366ff;
+    padding: 0 0 4px;
+}
+#logo{
+	margin-left: 8%;
+}

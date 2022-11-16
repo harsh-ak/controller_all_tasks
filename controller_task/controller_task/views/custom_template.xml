@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!-- Index -->
+<template id="my_page" name="MyPage">
+    <t t-call="website.layout">
+        <t t-set="additional_title">My Custom Page</t>
+        
+
+       <div>
+            <nav class="header">
+                <img src='/controller_task/static/img/logo.png' id="logo"/>
+
+                 <ul class="myp" id="first"> <b>Starts</b></ul>
+                 <ul class="myp"> About </ul>
+                 <ul class="myp"> Rate</ul>
+                <ul class="myp"> Support</ul>
+                <ul class="log"> Login</ul>
+                <ul class="myp"><button class="mybutton">Sign Up</button></ul>
+                
+            </nav>
+        </div>
+
+        <div class="mybody">
+            <div class="row">
+                <div class="col-6" id="big_content">
+                    <p class="myboldtext">Now Buy your </p>
+                    <p class="myboldtext">PIN or top up </p>
+                    <p class="myboldtext">with Bank transfers</p>
+                    <p class="small_text1">Choose your balance.Buy your PIN.Call for the 0800 that</p>
+                    <p class="small_text2">you will be informed at the time of your purchase</p>
+                    <button class="start_btn">Start Now</button>
+                    <p class="icon_content"><i class="fa fa-map-marker" id="icon_id"></i> &#160;Check the destinations you can call &#160; &#160;<i class="fa fa-check-circle" id="icon_id"></i> &#160;Select Your prepaid balance</p>
+                   
+                </div>
+
+                <div class="col-6" id="img_content">
+                     <img src='/controller_task/static/img/myimg.png' id="myimg"/>
+                </div>
+            </div>
+            <div class="row" id="myrow">
+                 <div class="col-4">
+                    <p class="forinline">Select Your Country</p>&#160; &#160;<i class='fa fa-angle-down' id="icon_id2"></i> 
+                    <div class="vertical-line"></div>
+
+                 </div>
+                 <div class="col-6">
+                     <p class="forinline">Choose Your Balance</p>&#160; &#160;<i class='fa fa-angle-down' id="icon_id2"></i> 
+                      
+                 </div>
+                 <div class="col 2">
+                    <button class="cont_btn">Continue</button>
+                 </div>
+
+            </div>
+        </div>
+       
+            
+           
+    </t>
+</template>
+
+
+</odoo>
